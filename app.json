@@ -1,0 +1,6 @@
+{
+  "name": "KFManagerBot",
+  "description": "Herokuでdiscord.pyを始めるテンプレート",
+  "repository": "https://github.com/Yuk1007/KFManagerBot.git",
+  "keywords": ["python", "discord", "bot"]
+}
