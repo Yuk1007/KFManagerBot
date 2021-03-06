@@ -18,7 +18,7 @@ async def on_ready():
 async def timer():
     now = datetime.now()
     hours = now.strftime('%H:%M')
-    if hours == '00:53':
+    if hours == '00:57':
         channel = client.get_channel(CHANNEL_ID)
         message = await channel.send('おはよう')
         emoji1 = '\U00002b55'
