@@ -18,11 +18,13 @@ async def on_ready():
 async def timer():
     now = datetime.now()
     hours = now.strftime('%H:%M')
-    if hours == '11:48':
+    if hours == '11:54':
         channel = client.get_channel(CHANNEL_ID)
-        message = await channel.send('おはよう')
-        emoji1 = '\U00002b55'
-        await message.add_reaction(emoji1)
+        message = await channel.send('スクリムに出る人は○出ない人は×を押してね！')
+        circle = '\U00002b55'
+        batu = '\U0000274c'
+        await message.add_reaction(circle)
+        await message.add_reaction(batu)
 
 @timer.before_loop
 async def before_timer():
