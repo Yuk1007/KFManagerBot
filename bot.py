@@ -3,8 +3,8 @@ import asyncio
 from discord.ext import tasks
 from datetime import datetime
 
-TOKEN = 'ODE2OTY4OTM5MTI4MDk0Nzcw.YECrnQ.AcK1cZvQMq_AFmTxpUQA4YgMf18'
-CHANNEL_ID = 767073166563606578
+TOKEN = 'ODE4NDUzNjQ0MTUxMzU3NDQw.YEYSWg.urKdlGui_SHFYn9R-XXH3DhU8wc'
+CHANNEL_ID = 788722117859737640
 
 client = discord.Client()
 
@@ -14,7 +14,7 @@ async def on_ready():
     print('ログインしました')
 
 
-@tasks.loop(seconds=10)
+@tasks.loop(minutes=1)
 async def timer():
     now = datetime.now()
     hours = now.strftime('%H:%M')
