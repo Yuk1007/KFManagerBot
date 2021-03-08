@@ -37,8 +37,8 @@ async def timer():
         kiwi = '\U0001f95d'
         ok = '\U0001f197'
         ng = '\U0001f196'
-        await message.add_reaction(apple)
         await message.add_reaction(grape)
+        await message.add_reaction(apple)
         await message.add_reaction(cherries)
         await message.add_reaction(peach)
         await message.add_reaction(tangerine)
