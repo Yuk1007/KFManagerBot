@@ -14,7 +14,7 @@ async def on_ready():
     print('ログインしました')
 
 
-@tasks.loop(minutes=1)
+@tasks.loop(minutes=60)
 async def timer():
     now = datetime.now()
     hours = now.strftime('%H:%M')
