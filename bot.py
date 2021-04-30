@@ -14,11 +14,11 @@ async def on_ready():
     print('ログインしました')
 
 
-@tasks.loop(minutes=1)
+@tasks.loop(minutes=60)
 async def timer():
     now = datetime.now()
-    hours = now.strftime('%H:%M')
-    if hours == '00:00':
+    hours = now.strftime('%H')
+    if hours == '00':
         channel = client.get_channel(CHANNEL_ID)
         embed = discord.Embed(title="本日のスクリム業務", description=":grapes: スクリム申請、18時の連絡\n"
                                                              ":apple: ロースター発表後のロースター掲載、観戦枠申請、浮上時間の連絡\n"
