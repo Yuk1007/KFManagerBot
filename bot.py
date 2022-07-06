@@ -3,7 +3,7 @@ import asyncio
 from discord.ext import tasks
 from datetime import datetime
 
-TOKEN = 'ODE4NDUzNjQ0MTUxMzU3NDQw.YEYSWg.urKdlGui_SHFYn9R-XXH3DhU8wc'
+TOKEN = ''
 CHANNEL_ID = 788722117859737640
 
 client = discord.Client()
