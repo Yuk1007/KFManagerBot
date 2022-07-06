@@ -4,7 +4,7 @@ from discord.ext import tasks
 from datetime import datetime
 
 TOKEN = ''
-CHANNEL_ID = 788722117859737640
+CHANNEL_ID = 0
 
 client = discord.Client()
 
